@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pritha Das</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      prithaxx
+    </div>
+    <ul class="nav-links">
+      <li>
+        <div class="dropdown">
+          <button class="aboutme-button">About Me
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#courses-section">Courses</a>
+            <a href="#skills-section">Skills</a>
+            <a href="#">Projects</a>
+          </div>
+        </div> 
+      </li>
+
+      <li>
+        <a href="https://github.com/prithaxx" target="_blank">GitHub</a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/in/prithadass/" target="_blank">LinkedIn</a>
+      </li>
+
+      <li>
+        <a href="#contact-me-section">Contact Me</a>
+      </li>
+    </ul>
+
+    <div class="burger">
+      <div class="class1"></div>
+      <div class="class2"></div>
+      <div class="class3"></div>
+    </div>
+  </nav>
+
+  <div class = "container">
+    <div class="profile-pic">
+      <img class="picture" src="images/cat.jpeg">
+    </div>
+    
+    <div class="about-me">
+      <p class="name">PRITHA DAS</p>
+      <p class="major-minor">Computer Science (Hons) & Statistic Minors</p>
+      <p class="major-minor">GPA: 3.91/4.50</p>
+    </div>
+
+    <div class="css-grid1" id="courses-section">
+      <div class="courses">
+        <li class = "course1">Data Structures and Algorithms</li>
+        <li class = "course1">Programming Practises</li>
+        <li class = "course1">Object Orientation</li>
+        <li class = "course1">Analysis of Algorithms</li> 
+        <li class = "course1">Computer Systems</li>
+      </div>
+      <div class="courses-description">Major Courses</div>
+
+      <div class="min-courses-description">Minor Courses</div>
+      <div class="min-courses">
+        <li>Statistical Analysis I</li>
+        <li>Statistical Analysis II</li>
+        <li>Principles of Data Collection</li>
+        <li>Statistics and Computing</li> 
+        <li>Tools and Techniques for Data Science</li>
+      </div>
+    </div>
+
+    <p class="skills" id="skills-section">Language Proficiency</p>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper skills-grid">
+        <div class="swiper-slide"><img src="images/java.png">
+          <div class="logo-name">Java</div>
+        </div>
+    
+        <div class="swiper-slide"><img src="images/c.png">
+          <div class="logo-name">C</div>
+        </div>
+    
+        <div class="swiper-slide"><img src="images/cplus.png">
+          <div class="logo-name">C++</div>
+        </div>
+    
+        <div class="swiper-slide"><img src="images/python.png">
+          <div class="logo-name">Python</div>
+        </div>
+    
+        <div class="swiper-slide"><img src="images/html.png">
+          <div class="logo-name">HTML</div>
+        </div>
+    
+        <div class="swiper-slide"><img src="images/css.png">
+          <div class="logo-name">CSS</div>
+        </div>
+    
+        <div class="swiper-slide"><img src="images/js.png">
+          <div class="logo-name">Javascript</div>
+        </div>
+    
+        <div class="swiper-slide"><img src="images/r.png">
+          <div class="logo-name">RStudio</div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+    <!-- Contact me -->
+  <div class = "contact-me" id = "contact-me-section">
+    <div class = "contact-info">
+      <div class = "heading1">Address
+        <div class = "heading2">2080 Pembina Hwy<br>Winnipeg, Manitoba R3T 2G9</div><br>
+      </div>
+      <div class = "heading1">Phone Number
+        <div class = "heading2">(204)-952-6690</div><br>
+      </div>
+      <div class = "heading1">Email Address
+        <div class = "heading2">prithadcan@gmail.com</div>
+      </div>
+    </div>
+
+    <div class = "contact-form">
+      <div class = "form-heading">Send me a Message</div>
+      <form action="https://formspree.io/f/mzblzwod" method="POST">
+        <input name="name" style="padding: 10px; height: 30px; width: 80%; font-family: Arial; 
+        background-color: rgb(241, 224, 248); border: none;" placeholder="Enter your name"></textarea>
+
+        <input type="email" name="email" style="padding: 10px; height: 30px; width: 80%; margin-bottom: 7px;
+        background-color: rgb(241, 224, 248); border: none;" placeholder="Enter your email">
+
+        <textarea name="message" style="height: 100px; width: 80%; margin-top: 7px; padding: 10px; font-family: Arial;
+        background-color: rgb(241, 224, 248); border: none;" placeholder="Enter your message here"></textarea>
+        <button class="submit-button">Submit Message</button>
+      </form>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script src="portfolio.js"></script>
+  
+  
+
+</body>
+
+</html>
