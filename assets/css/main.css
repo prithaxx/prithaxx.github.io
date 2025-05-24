@@ -627,6 +627,17 @@ section,
   line-height: 0;
 }
 
+.link {
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: skyblue;
+  text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
